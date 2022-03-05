@@ -11154,6 +11154,32 @@ p {
     background-position: center;
     background-size: cover;
   }
+  .commission-grid #com101 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 40vw;
+    height: 40vh;
+    margin-bottom: 40px;
+    background-image: url("https://dm2305files.storage.live.com/y4mUT96DNot6Sc8DEADqvoANYD1cWvNo4zVXYGSdEs8DHt0y8-PE1ZHaRNf1YE9NxlKXMG4Q4SsAR3kCA64EKQwqclz4_iSYrIXFSMFY3oAyeHozEORd0g-wmW9b10TbXGT07K4v6ONXvwDp2gFCp8ZMG17U6MKv_8gzKnmoc3lQqubsO14OhRlvr84d_7Jouy_?width=4952&height=1111&cropmode=none");
+    background-position: center;
+    background-size: cover;
+  }
+  .commission-grid #comtypes {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 40vw;
+    height: 40vh;
+    margin-bottom: 40px;
+    background-image: url("https://dm2305files.storage.live.com/y4mG11LwqQAzJwSOCSzQfePAsfhdQTjlFyBN0mG6wmaD9Ceb8gKTY1MWY8IMYs6YgrANHjFSZ_v8JGmp_UKd4AFWY6iVe0870DVixKb071p3lIn7dS_YDkIUUg5MUHJuxxT38bojqcYerQABfZWto_-oKiz3W5kt1fYCU5yXnMrGzETP_vTPAYkodc-89Q2HbUn?width=5158&height=1048&cropmode=none");
+    background-position: center;
+    background-size: cover;
+  }
   .commission-grid .commission-line {
     -ms-grid-column-align: center;
         justify-self: center;
@@ -11195,6 +11221,16 @@ p {
     width: 40vw;
     gap: 20px;
   }
+  .commission-line2 .comimg {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -webkit-box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+            box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    width: 40vw;
+  }
   .commission-line2 a #wide {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -11235,6 +11271,11 @@ p {
     font-weight: 100;
     width: 30vw;
   }
+  .commission-line2 ol li img {
+    width: 30vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .commission-line2 #backbtn {
     -ms-grid-column-align: center;
         justify-self: center;
@@ -11255,7 +11296,7 @@ p {
     transition: 0.4s all ease;
     -webkit-box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
             box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-    border-radius: 21px;
+    border-radius: 15px;
   }
   .commission-line2 #backbtn img:hover {
     -webkit-box-shadow: rgba(33, 33, 61, 0.5) 0px 10px 10px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
