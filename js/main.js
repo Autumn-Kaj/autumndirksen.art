@@ -20,3 +20,5 @@ $(document).ready(function(){
     
     ScrollReveal().reveal('#title-slide', { distance: '30px',
     origin: 'right', duration: 2000, });
+
+    ScrollReveal().reveal('.nav-reveal', {duration: 2000});
