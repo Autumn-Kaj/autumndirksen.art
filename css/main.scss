@@ -35,7 +35,7 @@ html.sr .load-hidden {
 .large-subhead{
     font-family:'Roboto', 'sans-serif';
     color: $font_color_white;
-    font-weight: 400;
+    font-weight: 300;
     font-size:4vh;
 }
 
@@ -124,13 +124,14 @@ p{
     .home-nav-grid{
         align-self: center;
         justify-self: center;
-        clip-path: polygon(0%, 100%, 0%, 100%);
         width:100vw;
         position:absolute;
         top:100vh;
         left:0px;
         background-color: white;
         height:100vh;
+        display:grid;
+        grid-template-columns: 1fr;
         #hamburger{
             height:5vh;
             display:block;
@@ -140,15 +141,15 @@ p{
         }
         .splash-items{
             display:grid;
-            position:absolute;
-            bottom:125%;
-            left:20vw;
+            position:relative;
+            top:-90%;
             padding:0px;
             align-self: center;
             justify-self: center;
             grid-template-rows: 1fr 1fr 1fr;
-            width:50vw;
+            width:60vw;
             height:40vh;
+            margin-right:0;
             .title{
                 display:grid;
                 grid-template-columns: 1fr;
@@ -163,7 +164,6 @@ p{
                     align-self: center;
                     justify-self: center;
                     text-align: center;
-                    font-size: medium !important;
                 }
             }
             img{
@@ -305,7 +305,8 @@ p{
         background-color: white;
         width: 100vw;
         height:12vh;
-        top:178vh;
+        top:1500vh;
+        z-index:99;
         
         
         div{
@@ -374,24 +375,24 @@ p{
         height: 88vh;
         width:100vw;
         position: fixed;
+        z-index: 1;
         
     }
     .home-nav-grid{
         align-self: center;
         justify-self: center;
-        clip-path: polygon(0%, 100%, 0%, 100%);
-        width:100vw;
-        position:absolute;
+        position:relative;
         top:88vh;
         left:0px;
         background-color: white;
-        height:100vh;
+        height:15vh;
+        z-index: 97;
+        display:grid;
+        grid-template-columns: 1fr;
         .splash-items{
             display:grid;
-            position:absolute;
-            bottom:125%;
-            left:25%;
-            right:-25%;
+            position:relative;
+            top:-150%;
             padding:0px;
             align-self: center;
             justify-self: center;
@@ -498,6 +499,7 @@ p{
             .dropdown{
                 text-align: center;
                 justify-self: center;
+                z-index:99;
                 a{
                     transition: .4s all ease;
                     text-decoration: none;
@@ -543,15 +545,14 @@ p{
 
     }
     .home-footer-grid{
-        position: absolute;
         display: grid;
+        position: relative;
         grid-template-columns: 1fr;
         background-color: white;
         width: 100vw;
         height:12vh;
-        top:188vh;
-        
-        
+        z-index:97;
+
         div{
             justify-self: center;
             align-self: center;
