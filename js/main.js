@@ -5,6 +5,34 @@ $(document).ready(function(){
     });
 });
 
+/*Gallery Top Navigation*/
+$(document).ready(function(){
+    const goToPaintings = document.getElementById("paintings");
+    const goToPaintingsBtn = document.getElementById("paintingsbtn");
+
+    goToPaintingsBtn.addEventListener("click", () => {
+    goToPaintings.scrollIntoView({ behavior: "smooth", block:"start"});
+    });
+});
+
+$(document).ready(function(){
+    const goToDigital = document.getElementById("digitalart");
+    const goToDigitalBtn = document.getElementById("digitalbtn");
+
+    goToDigitalBtn.addEventListener("click", () => {
+    goToDigital.scrollIntoView({ behavior: "smooth", block:"start"});
+    });
+});
+
+$(document).ready(function(){
+    const goTo3d = document.getElementById("3dart");
+    const goTo3dBtn = document.getElementById("3dartbtn");
+
+    goTo3dBtn.addEventListener("click", () => {
+    goTo3d.scrollIntoView({ behavior: "smooth", block:"start"});
+    });
+});
+
 /*Scroll Reveal*/
 $(document).ready(function(){
     ScrollReveal().reveal('#title-reveal', { distance: '150%',
