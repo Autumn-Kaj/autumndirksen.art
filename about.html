@@ -19,21 +19,66 @@
         <!------Favicon------>
         <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 
+        <style>
+            .jitter-letter {
+                display: inline-block;
+                animation: jitter 1.2s infinite;
+                animation-timing-function: steps(1);
+            }
+            @keyframes jitter {
+                0%   { transform: translate(0px, 0px) skewX(0deg) skewY(0deg); }
+                10%  { transform: translate(-1px, 0.5px) skewX(-0.4deg) skewY(0.2deg); }
+                20%  { transform: translate(0.5px, -1px) skewX(0.4deg) skewY(-0.4deg); }
+                30%  { transform: translate(1px, 0.5px) skewX(0deg) skewY(0.4deg); }
+                40%  { transform: translate(-0.5px, 1px) skewX(0.4deg) skewY(-0.2deg); }
+                50%  { transform: translate(0px, -0.5px) skewX(-0.4deg) skewY(0deg); }
+                60%  { transform: translate(1px, -1px) skewX(0.2deg) skewY(0.4deg); }
+                70%  { transform: translate(-1px, -0.5px) skewX(-0.2deg) skewY(-0.4deg); }
+                80%  { transform: translate(0.5px, 1px) skewX(0.4deg) skewY(0.2deg); }
+                90%  { transform: translate(-0.5px, 0.5px) skewX(-0.4deg) skewY(-0.2deg); }
+                100% { transform: translate(0px, 0px) skewX(0deg) skewY(0deg); }
+            }
+            @media (prefers-reduced-motion: reduce) {
+                .jitter-letter { animation: none; }
+            }
+        </style>
+
     </head>
     
     
-    <body>
+    <body class="about-page">
         <div class="loader"></div>
+        <div class="carousel-container">
+            <div class="carousel hide-xs">
+                <img class="x" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745981388/exit_wmikxv.png">
+                <div class="carousel-picture"></div>
+            </div>
+        </div>
+        <div class="dark-overlay hide-xs"></div>
         <header>
+            <section class="splash">
+                <div class="splash-slide splash-slide-1" aria-hidden="true"></div>
+                <div class="splash-slide splash-slide-2" aria-hidden="true"></div>
+                <div class="splash-slide splash-slide-3" aria-hidden="true"></div>
+            </section>
         <!---Navigation-->
-            <div class="nav-grid">
-                <img id="hamburger" src="https://dm2305files.storage.live.com/y4m9uqWXMlrFVMkKLsYOxxuoSX77ehWmc3nv4euJicxsRIMlAV9b_AcL-SQnhDc1wijnbbpM4IpUuWwbu6AlSLFWcJbwNhHgJYSLfEN3cyXgf2kOGx8-7ZkhCHTp1B-JQ3sW5Q8tq3nWbp4smyr8ZsnJeaQDca1XcAdSBzFgMJYc_zlFK0z1cRJ_K_ize3jh6O0?width=36&height=36&cropmode=none">
+            <section class="home-nav-grid">
+                <img id="hamburger" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1749176516/HamburgerD_2_zxsthq.png">
+                <div class="splash-items">
+                    <div class="title">
+                        <h1 class="large-title jitter-text" id="title-reveal">Hi, I'm Autumn!</h1> 
+                    </div>
+                    
+                    <button id="arrow-reveal" type="button" aria-label="Scroll to socials section">
+                        <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1749176678/arrow_1_q4mkju.png" alt="Scroll down">
+                    </button>
+                </div>
                 <div class="socials hide-xs">
-                    <h4 class="medium-title">AUTUMN DIRKSEN</h4>
+                    <h4 class="medium-title" id="socials-anchor">AUTUMN DIRKSEN</h4>
                     <div class="icons">
-                        <a href="https://instagram.com/autumn_whiskers"><img src="https://dm2305files.storage.live.com/y4mY_uF7byBQ6pM-4KNsZPjTrPtVmfmDw_aCCDayMbyEOZG8ZgVh5B0Cq-HbMSv_ZibcRXu0fo0KgUtzxJg0NhGCw_ScaUsZPWxsqqXACGr0PeQnhNBTjkIZf2gLcCKkePYoUUfFPnROZ6aZxCm5HaDJK4vJTDSHED4OQbRoarStjCsML8DjlTO7kaTDlMuRYws?width=74&height=74&cropmode=none" alt="insta"></a>
-                        <a href="https://www.youtube.com/channel/UCsCM2dECPEWr19D7oINZ4cw"><img src="https://dm2305files.storage.live.com/y4msU43jH6nRuJRDY2ehTSxYSqVyajwoNiro5UBjlmtrkuoEzEt7f_ZYBLEcuE3Zq4gLk6E_UH9nR2Mt879Ve0PF_ShTwWZHnkC-t0TayDChfCUQXfJukJPzZmDjXnxfJ7Sz5-EVW-v1CE-u1G3cYVOEA7oYqnDIotrjmce2QZv_bVTfdiGOu3_SCzmOi5vmjps?width=76&height=74&cropmode=none" alt="Youtube"></a>
-                        <a href="https://www.etsy.com/shop/autumnsartstore"><img src="https://dm2305files.storage.live.com/y4mpIThO6IOBG1Ns9a4pV7qmObNwdzOXmYPf3EuLRTImgam6cFp3jjNIoo6yN6TdZo8dKrOUvlDfznL1ihQB0RHC-6rXPJ8GVhQhv8kfajoLq3rv-dJ5jRHivkrA5usgmFOXaijro2ceECCv3GQoH2n7zLPVgHp_-ZuMlSLf3gklXlA-czg9dxYlGOmf0oBiS0T?width=76&height=76&cropmode=none" alt="Etsy"></a>
+                        <a href="https://instagram.com/autumn_whiskers"><img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745981389/instablack_hclkyb.png" alt="insta"></a>
+                        <a href="https://www.youtube.com/channel/UCsCM2dECPEWr19D7oINZ4cw"><img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745981391/YoutubeD_neastb.png" alt="Youtube"></a>
+                        <a href="https://www.etsy.com/shop/autumnsartstore"><img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745981387/EtsyD_uxt3l1.png" alt="Etsy"></a>
                     </div>
                 </div>
                 <div class="container">
@@ -41,36 +86,25 @@
                             <ul>
                                 <li class="non-drop hide-xl">
                                     <div id="mobile-menu-head">
-                                        <img id="hamburger-close" src="https://dm2305files.storage.live.com/y4mXSa0k5bHf3V_Lgj00N3k_cy87GVi8Rh9iPHxwD7CNnYotvq-21qSGeTYyHhrNur33NGNzPvNJU2culYIkTN2zUzI-MjRjE3rqBjKNrnIPMmggmiGuHTBP2FgUA9BA67NV2RQA_xZndfk5TRvCpgEPsZIvTpFv5jZMboRhTtENQG5mEk0vaACA6L7yBabVsqQ?width=36&height=36&cropmode=none" alt="exit">
+                                        <img id="hamburger-close" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745981388/exit_wmikxv.png" alt="exit">
                                     </div>
                                 </li>
                                 
                                 <li class="non-drop hide-xl"></li>
 
-                                <li class="non-drop">
-                                    <a href="index.html">Home</a></li>
-                                <li class="dropdown">
-                                    <a class="dropdown-btn" href="work.html">Work</a>
-                                    <div class="dropdown-content">
-                                        <a href="creatures.html">Creatures</a>
-                                        <a href="characters.html">Characters</a>
-                                        <a href="illustration.html">Illustration</a>
-                                        <a href="blackrose.html">BlackRose</a>
-                                    </div>
-                                </li>
+                                <li class="non-drop"><a href="index.html">Home</a></li>
+                                <li class="non-drop"><a href="work.html">Work</a></li>
                                 <li class="non-drop"><a href="about.html">About</a></li>
                                 <li class="non-drop"><a href="commissions.html">Commissions</a></li>
-                                <li class="non-drop">
-                                    <a href="https://www.etsy.com/shop/autumnsartstore">Shop</a>
-                                </li>
+                                <li class="non-drop"><a href="https://www.etsy.com/shop/autumnsartstore">Shop</a></li>
                                 
                                 <li class="non-drop hide-xl"></li>
                                 
                                 <li>
                                     <div id="mobile-socials" class="hide-xl">
-                                        <a href="https://instagram.com/autumn_whiskers"><img src="https://dm2305files.storage.live.com/y4m0EwsViRJGLYUcnXcZYuCcC3d52qai-I4SESOAJC5baYyHPV49sOfcWN82J6SAHrZcbnERf6Q5IiQz1eMNjvMwsG7IOQ2oTX3tdA9MKISNxmJj-0lvSKWCWorswfDjbCFR_2v5cTU7rpKFfRRsINAOOzk7Ikhfp0HI236bHUtbB-rPcgnhhbn_ZoZPzAMctXT?width=36&height=36&cropmode=none" alt="insta"></a>
-                                        <a href="https://www.youtube.com/channel/UCsCM2dECPEWr19D7oINZ4cw"><img src="https://dm2305files.storage.live.com/y4mQCfOvWmYpy2YHI2DDhyzWxWibDaMRXDwi9Oo3AHg5MfZnTepew4vUxmLm5v9Fdc5brsoyRmSuXNukNXW_J2fq3tjMGdioKox7pTfQlgj9bSOm9NYQPn8waN9GVmDN7MOuBE_rCOxrBJvPxuGL6cTKzNjH5eXzSCnzA7k5eGVYu_ZzxBkYiCeO5NGhWNG2d0U?width=36&height=36&cropmode=none" alt="Youtube"></a>
-                                        <a href="https://www.etsy.com/shop/autumnsartstore"><img src="https://dm2305files.storage.live.com/y4meQ8s2k4-jeneC1pk4zwSyGMleokGuPKrj9Wsw5Dw6oDNARfoKJRyopsKjf898OPyYNUvIZCxiEMsiDb3jf0g8o1qlRVgbp0gTQA3doQ3NA00mwJoxRv0bECfsG_ZBXUKJqNNQLPIG1BCOA5Vj4fHB06HRqJYy8eAGes-o3Yh4ACorSEvzbH45WQ_lrxwJFRe?width=36&height=36&cropmode=none" alt="Etsy"></a>
+                                        <a href="https://instagram.com/autumn_whiskers"><img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1779840088/instablack_hclkyb_drzzje.png" alt="insta"></a>
+                                        <a href="https://www.youtube.com/channel/UCsCM2dECPEWr19D7oINZ4cw"><img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1779840087/YoutubeD_neastb_wlbim1.png" alt="Youtube"></a>
+                                        <a href="https://www.etsy.com/shop/autumnsartstore"><img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1779840088/EtsyD_uxt3l1_fczvvb.png" alt="Etsy"></a>
                                         
                                     </div>
                                 </li>
@@ -82,13 +116,101 @@
         <div class="clearfix"></div>
         <!------Main Content-------->
         <main>
-            <img id="backtop" alt="back to top" src="https://dm2305files.storage.live.com/y4m1Mjt6uvmtq_hOgZ_5CPdkWWeRU7Sv_qPx_s-T0Ntkz-XoxnC0po4xMWOxNGZCIBJIkfxgKkpKMZgj5QWb_6JRhVT-CrnqCByl495VoqIygweBVcMC-2vvEvZVEkbCQgeRlt92mcH7CPHJ64KJ8op44msvSpbNh4QgFiP81L0veFOMR4AzTLTZdChrCzhlCA-?width=794&height=794&cropmode=none">
-            <section class="about-grid">
-                <img id="about1" alt="about page 1" src="https://dm2305files.storage.live.com/y4m1gjlCKTq8MytsJGb0CXdVuiHgVVw3hjEMCAeqj4zEI27D4OCBY9SDlLVRezAkZc1mO6DduAreKKqCa4OeNLmp-VQKDrW9D7nwnqFdoCjC-OMAreFA4t52GkyGylfpLnh5atwXOkvHt4jGHLI2-uwnvDiPmKgamlDQyiZyhRLituXh3pxuq7Sht-6TQl3MDWX?width=1920&height=1080&cropmode=none">
-                <img id="about2" alt="about page 2" src="https://dm2305files.storage.live.com/y4m-wsa893kfwTjWkaTRDslUfdBOx1jGyzA16r0FmhrvFiFjKxUQve_evDKB6vw7bq2s1nOFpGOx9-dqTBXxJi_-NcdbtBqLEztJ3LhGmgo_GHJFUTN6oW1YPOoUQmoLnksgV_GA5dNhU-qrQt8VEsE43LUT9sMRrJcG7cKHftnKt2f5enrlFurU2b1YP9rYVQg?width=1920&height=1080&cropmode=none">
-                <img id="about3" alt="about page 3" src="https://dm2305files.storage.live.com/y4mgN_vdEnxdb8F4Afg0LkMXU4eFYUwTVLSCCaNHq9t78EhJKc8nmgkoo_bre62HoUPZ8ukP3rhvmzYHjgdBlgv62YVzU2T1PtZtSyqw7lIDngHjeQL6TMZrtxTmGANgxkiDLfN7XMEiX4UYRKSkL8feCkW9jAM_ndQMRgXMQyFSCwFj_HZl-ib8LLnKohQm3RF?width=1920&height=1080&cropmode=none">
-                <img id="about4" alt="about page 4" src="https://dm2305files.storage.live.com/y4mDN93sRRb-FfZpIpRJm3XWSwp3dmFHdwhVTeIoqdW-ZnsdnGUYTFWpJsfi5jEtqZ6WfUx0AU64oFxgZYXg9Q--T8R4P-Q3VZXuSLdGBF9N08c7DnZIGxjp8R9lU9mmELehwinBjQQyFG6djvRw5AMTcTVmgeoEE_E8y1FrEVTrXxBBXaj_vXMP3T4HxxAa5Nd?width=1920&height=1080&cropmode=none">
-                <img id="about5" alt="about page 5" src="https://dm2305files.storage.live.com/y4mmAnfrZKbiXMVBj-RcQ2b6cLRG28bVoChYCYKlAOFIuOlPJBaw51PVNWLkU8QYq1o8jSoApksUD_3IXk7TnVDYHumA-xwEw34zizOz_fjFvfAmNOfC4ezOwNtmBK2zzbeeL4i1S2QStao0n5IV_2EMYpWTw-ouw3i3InQuBXAyK6V8dLZAHKgehjl-GZ0yAQW?width=1920&height=1080&cropmode=none">
+            <img id="backtop" alt="back to top" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745981386/backtotop_vikbtv.png">
+            <section class="work-intro about-intro">
+                <video class="about-intro-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+                    <source src="https://res.cloudinary.com/drzpxjrab/video/upload/v1777949135/aboutbg_1_tdw976.mp4" type="video/mp4">
+                </video>
+                <div class="work-intro-copy">
+                    <div class="title-line">
+                        <h1>About Me</h1>
+                    </div>
+                    <p>Hi! Thanks for visiting my art portfolio! I am an artist from the Pacific Northwest currently based in Seattle, WA. I specialize in digital illustration, character art, and concept work. I also dabble in traditional media when the mood suites me, and have become proficient in water-color and acrylic painting. I love animals and have a cat and a dog that I love dearly, and whom inspire me every day! </p>
+                </div>
+            </section>
+            <section class="about-photo-grid">
+                <img class="about-photo about-photo-1" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745811990/autumngrad_zoedealphotography72_websize_kptnhw.jpg" alt="Photo 1">
+                <img class="about-photo about-photo-2" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745812047/Screenshot_20200206-165431_Instagram_rzpups.jpg" alt="Photo 2">
+                <img class="about-photo about-photo-3" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1777934812/autumngrad_zoedealphotography94_u1icwp.jpg" alt="Photo 3">
+                <img class="about-photo about-photo-4" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1777935496/DSC_99712_vjjzmg.jpg" alt="Photo 4">
+                <img class="about-photo about-photo-5" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1777934424/AutumnArtMarket2_vgfkxc.jpg" alt="Photo 5">
+                <img class="about-photo about-photo-6" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1779237269/Graduation2021-2_cay8cx.jpg" alt="Photo 6">
+            </section>
+
+            <section class="credentials-section">
+                <div class="credentials-inner">
+                    <div class="title-line credentials-title">
+                        <h1 class="credentials-title">My Credentials</h1>
+                    </div>
+
+                    <div class="credentials-columns">
+                        <div class="credentials-col">
+                            <h2 class="credentials-col-heading">Education</h2>
+                            <ul class="credentials-list">
+                                <li class="credential-item">
+                                    <span class="credential-year">2016 – 2021</span>
+                                    <div class="credential-details">
+                                        <strong>Bachelor of Science, Industrial Design</strong>
+                                        <span>Western Washington University · Bellingham, WA</span>
+                                    </div>
+                                </li>
+                                <li class="credential-item">
+                                    <span class="credential-year">2016 – 2021</span>
+                                    <div class="credential-details">
+                                        <strong>Minor in User Experience Design</strong>
+                                        <span>Western Washington University · Bellingham, WA</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="credentials-divider"></div>
+
+                        <div class="credentials-col">
+                            <h2 class="credentials-col-heading">Experience</h2>
+                            <ul class="credentials-list">
+                                <li class="credential-item">
+                                    <span class="credential-year">2016 – Present</span>
+                                    <div class="credential-details">
+                                        <strong>Freelance Illustrator &amp; Artist</strong>
+                                        <span>Self-Employed</span>
+                                    </div>
+                                </li>
+                                <li class="credential-item">
+                                    <span class="credential-year">2016 - Present</span>
+                                    <div class="credential-details">
+                                        <strong>Creator of Autumn's Art Store on Etsy.com</strong>
+                                        <span>Self Employed</span>
+                                    </div>
+                                </li>
+                                <li class="credential-item">
+                                    <span class="credential-year">2025</span>
+                                    <div class="credential-details">
+                                        <strong>Artist of the Month</strong>
+                                        <span>Whatcom Art Guild</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="programs-mediums">
+                <div class="programs-mediums-inner">
+                    <div class="title-line programs-mediums-title">
+                        <h1>Programs &amp; Mediums</h1>
+                        <ul class="program-list">
+                            <li class="program-item">Procreate</li>
+                            <li class="program-item">Adobe Photoshop</li>
+                            <li class="program-item">Adobe Illustrator</li>
+                            <li class="program-item">Figma</li>
+                            <li class="program-item">Blender 3D</li>
+                            <li class="program-item">Acrylic Paint</li>
+                            <li class="program-item">Watercolor</li>
+                            <li class="program-item">Cosclay Sculpting</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -96,7 +218,7 @@
         <footer>
             <div class="footer-grid">
                 <div>
-                    <p> Autumn Dirksen 2023</p>
+                    <p>Autumn Dirksen <span id="copyright-year"></span></p>
                 </div>
             </div>
         </footer>
@@ -106,6 +228,50 @@
         <!-- JavaScript -->
         <script src="js/main.js"></script>
         <script src="js/mobile.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                var $title = $('.jitter-text');
+                var text = $title.text();
+                var html = '';
+                for (var i = 0; i < text.length; i++) {
+                    if (text[i] === ' ') {
+                        html += '<span class="jitter-letter">&nbsp;</span>';
+                    } else {
+                        html += '<span class="jitter-letter">' + $('<div>').text(text[i]).html() + '</span>';
+                    }
+                }
+                $title.html(html);
+                $title.find('.jitter-letter').each(function () {
+                    $(this).css('animation-delay', (Math.random() * 0.4) + 's');
+                });
+
+                var photoNodes = document.querySelectorAll('.about-photo-grid .about-photo');
+                if (photoNodes.length) {
+                    if ('IntersectionObserver' in window) {
+                        var photoObserver = new IntersectionObserver(function (entries, observer) {
+                            entries.forEach(function (entry) {
+                                if (entry.isIntersecting) {
+                                    entry.target.classList.add('in-view');
+                                    observer.unobserve(entry.target);
+                                }
+                            });
+                        }, {
+                            threshold: 0.2,
+                            rootMargin: '0px 0px -8% 0px'
+                        });
+
+                        photoNodes.forEach(function (node) {
+                            photoObserver.observe(node);
+                        });
+                    } else {
+                        photoNodes.forEach(function (node) {
+                            node.classList.add('in-view');
+                        });
+                    }
+                }
+            });
+        </script>
 
     </body> 
 </html>

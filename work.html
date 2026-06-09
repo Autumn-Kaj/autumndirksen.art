@@ -24,10 +24,20 @@
     
     <body>
         <div class="loader"></div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img class="x" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745981388/exit_wmikxv.png" alt="Close image carousel">
+                <button type="button" class="carousel-nav carousel-prev" id="work-carousel-prev" aria-label="Previous image">&#10094;</button>
+                <button type="button" class="carousel-nav carousel-next" id="work-carousel-next" aria-label="Next image">&#10095;</button>
+                <div class="carousel-counter" id="work-carousel-counter" aria-live="polite"></div>
+                <div class="carousel-picture"></div>
+            </div>
+        </div>
+        <div class="dark-overlay"></div>
         <header>
 <!---Navigation-->
 <div class="nav-grid">
-    <img id="hamburger" src="https://dm2305files.storage.live.com/y4m9uqWXMlrFVMkKLsYOxxuoSX77ehWmc3nv4euJicxsRIMlAV9b_AcL-SQnhDc1wijnbbpM4IpUuWwbu6AlSLFWcJbwNhHgJYSLfEN3cyXgf2kOGx8-7ZkhCHTp1B-JQ3sW5Q8tq3nWbp4smyr8ZsnJeaQDca1XcAdSBzFgMJYc_zlFK0z1cRJ_K_ize3jh6O0?width=36&height=36&cropmode=none">
+    <img id="hamburger" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1749176516/HamburgerD_2_zxsthq.png">
     <div class="socials hide-xs">
         <h4 class="medium-title">AUTUMN DIRKSEN</h4>
         <div class="icons">
@@ -41,37 +51,25 @@
                 <ul>
                     <li class="non-drop hide-xl">
                         <div id="mobile-menu-head">
-                            <img id="hamburger-close" src="https://dm2305files.storage.live.com/y4mXSa0k5bHf3V_Lgj00N3k_cy87GVi8Rh9iPHxwD7CNnYotvq-21qSGeTYyHhrNur33NGNzPvNJU2culYIkTN2zUzI-MjRjE3rqBjKNrnIPMmggmiGuHTBP2FgUA9BA67NV2RQA_xZndfk5TRvCpgEPsZIvTpFv5jZMboRhTtENQG5mEk0vaACA6L7yBabVsqQ?width=36&height=36&cropmode=none" alt="exit">
+                            <img id="hamburger-close" src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745981388/exit_wmikxv.png" alt="exit">
                         </div>
                     </li>
                     
                     <li class="non-drop hide-xl"></li>
 
-                    <li class="non-drop">
-                        <a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-btn" href="work.html">Work</a>
-                        <div class="dropdown-content">
-                            <a href="creatures.html">Creatures</a>
-                            <a href="characters.html">Characters</a>
-                            <a href="illustration.html">Illustration</a>
-                            <a href="blackrose.html">BlackRose</a>
-                        </div>
-                    </li>
+                    <li class="non-drop"><a href="index.html">Home</a></li>
+                    <li class="non-drop"><a href="work.html">Work</a></li>
                     <li class="non-drop"><a href="about.html">About</a></li>
                     <li class="non-drop"><a href="commissions.html">Commissions</a></li>
-                    <li class="non-drop">
-                        <a href="https://www.etsy.com/shop/autumnsartstore">Shop</a>
-                    </li>
+                    <li class="non-drop"><a href="https://www.etsy.com/shop/autumnsartstore">Shop</a></li>
                     
                     <li class="non-drop hide-xl"></li>
                     
                     <li>
                         <div id="mobile-socials" class="hide-xl">
-                            <a href="https://instagram.com/autumn_whiskers"><img src="https://dm2305files.storage.live.com/y4m0EwsViRJGLYUcnXcZYuCcC3d52qai-I4SESOAJC5baYyHPV49sOfcWN82J6SAHrZcbnERf6Q5IiQz1eMNjvMwsG7IOQ2oTX3tdA9MKISNxmJj-0lvSKWCWorswfDjbCFR_2v5cTU7rpKFfRRsINAOOzk7Ikhfp0HI236bHUtbB-rPcgnhhbn_ZoZPzAMctXT?width=36&height=36&cropmode=none" alt="insta"></a>
-                            <a href="https://www.youtube.com/channel/UCsCM2dECPEWr19D7oINZ4cw"><img src="https://dm2305files.storage.live.com/y4mQCfOvWmYpy2YHI2DDhyzWxWibDaMRXDwi9Oo3AHg5MfZnTepew4vUxmLm5v9Fdc5brsoyRmSuXNukNXW_J2fq3tjMGdioKox7pTfQlgj9bSOm9NYQPn8waN9GVmDN7MOuBE_rCOxrBJvPxuGL6cTKzNjH5eXzSCnzA7k5eGVYu_ZzxBkYiCeO5NGhWNG2d0U?width=36&height=36&cropmode=none" alt="Youtube"></a>
-                            <a href="https://www.etsy.com/shop/autumnsartstore"><img src="https://dm2305files.storage.live.com/y4meQ8s2k4-jeneC1pk4zwSyGMleokGuPKrj9Wsw5Dw6oDNARfoKJRyopsKjf898OPyYNUvIZCxiEMsiDb3jf0g8o1qlRVgbp0gTQA3doQ3NA00mwJoxRv0bECfsG_ZBXUKJqNNQLPIG1BCOA5Vj4fHB06HRqJYy8eAGes-o3Yh4ACorSEvzbH45WQ_lrxwJFRe?width=36&height=36&cropmode=none" alt="Etsy"></a>
-                            
+                            <a href="https://instagram.com/autumn_whiskers"><img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1779840088/instablack_hclkyb_drzzje.png" alt="insta"></a>
+                            <a href="https://www.youtube.com/channel/UCsCM2dECPEWr19D7oINZ4cw"><img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1779840087/YoutubeD_neastb_wlbim1.png" alt="Youtube"></a>
+                            <a href="https://www.etsy.com/shop/autumnsartstore"><img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1779840088/EtsyD_uxt3l1_fczvvb.png" alt="Etsy"></a>
                         </div>
                     </li>
                 </ul>
@@ -82,17 +80,30 @@
 <div class="clearfix"></div>
         <!------Main Content-------->
         <main>
+            <section class="work-intro">
+                <div class="work-intro-copy">
+                    <div class="title-line">
+                        <h1>About My Work</h1>
+                    </div>
+                    <p>I began drawing at a very young age as a way to entertain myself as an only-child. Though my family moved a lot while I was growing up, the one constant in my life was art. I still carry that with me today, knowing that no matter what happens in life - that there is always art. <br><br>
+
+Many of my pieces focus on my interests ( which can vary wildly). I have always been fascinated and drawn to nature and animals and most of my work features animals, real and imaginary. I have interest in fantasy, science fiction, animation, movies, books, you name it! All of these interests play a big part in my art, and help to shape the stories that I tell.<br><br>
+
+As an artist, I have often been interested in many different mediums and subjects. I enjoy exploring new creative outlets and learning new ways to express my ideas through art! Currently, my pieces are mainly created through digital painting, acrylic painting, and watercolor. However, I also love sculpting using Cosclay and on the computer using programs like Blender3d.
+</p>
+                </div>
+            </section>
             <section class="gallery-grid">
-                <div class="gallery-line">
-                    <div class="image-item" >
+                <div class="gallery-line hide-xs hide-xl">
+                    <div class="image-item hide-xs hide-xl" >
                         <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745980743/IMG_0972_jqddj1.gif" loading="lazy" alt="Digital Work"/>
                         <div class="title-overlay"id="digitalbtn"><span>Digital Works</span></div>
                     </div>
-                    <div class="image-item" >
+                    <div class="image-item hide-xs hide-xl" >
                         <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1751489490/DSC05682-EDIT2_hsj2my.png" loading="lazy" alt="Paintings"/>
                         <div id="paintingsbtn" class="title-overlay"><span >Acrylic and Watercolor</span></div>
                     </div>
-                    <div class="image-item" >
+                    <div class="image-item hide-xs hide-xl" >
                         <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745980007/Pumpkin_Pie_s1hnqu.png" loading="lazy" alt="Pumpkin Pie - 2024"/>
                         <div class="title-overlay" id="3dartbtn"><span>3d Works</span></div>
                     </div>
@@ -103,7 +114,7 @@
                 </div>
                 <div class="image-gallery">
                     <div class="column">
-                        <div class="image-item" id="Flame-Guardian">
+                        <div class="image-item">
                             <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745980019/Sea_Dragon_denilk.png" loading="lazy" alt="Sea Dragon Concept - 2024"/>
                             <div class="overlay"><span>Sea Dragon Concept - 2024</span></div>
                         </div>
@@ -111,28 +122,114 @@
                 </div>
                 <div class="image-gallery">
                     <div class="column">
-                        <div class="image-item" id="Flame-Guardian">
-                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745979973/Untitled_Artwork_4_jn14iu.png" loading="lazy" alt="Flame Guardian - 2023"/>
+                        <div class="image-item">
+                            <video src="https://res.cloudinary.com/drzpxjrab/video/upload/v1777692976/Flame_Guardian_ripdpg.mp4" autoplay loop muted playsinline style="width:100%;border-radius:5px;display:block;"></video>
                             <div class="overlay"><span>Flame Guardian - 2023</span></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745979976/Zeus_uxnjna.png" loading="lazy" alt="Zeus Postcard - 2023"/>
+                            <div class="overlay"><span>Zeus Postcard- 2023</span></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745979971/Untitled_Artwork_3_jjitgh.png" loading="lazy" alt="Mermaid - 2023"/>
+                            <div class="overlay"><span>Mermaid - 2023</span></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745979966/Untitled_Artwork_5_iyc16a.png" loading="lazy" alt="Moon Demon - 2023"/>
+                            <div class="overlay"><span>Moon Demon - 2023</span></div>
                         </div>
                     </div>
                     <div class="column">
-                        <div class="image-item" id="Flame-Guardian">
+                        <div class="image-item">
                             <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745980013/Dragon_Shrine_nun6fj.png" loading="lazy" alt="Dragon Shrine - 2023"/>
                             <div class="overlay"><span>Dragon Shrine - 2023</span></div>
                         </div>
+                        <div class="image-item">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745979971/Untitled_Artwork_9_szvxlg.png" loading="lazy" alt="Forest Spirit - 2023"/>
+                            <div class="overlay"><span>Atlas Postcard - 2023</span></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1777695459/seagriff_1_g5tcdk.png" loading="lazy" alt="Sea Griffon - 2020"/>
+                            <div class="overlay"><span>Sea Griffon - 2020</span></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1749178573/Sea_Critter_Stickers_xxk7rs.jpg" loading="lazy" alt="Salish Sea Critter Stickers - 2025"/>
+                            <div class="overlay"><span>Salish Sea Critter Stickers - 2025</span></div>
+                        </div>
                     </div>
                     <div class="column">
-                        <div class="image-item" id="Flame-Guardian">
+                        <div class="image-item">
                             <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1745980022/Tiger_x68x8w.png" loading="lazy" alt="Celestial Tiger - 2024"/>
                             <div class="overlay"><span>Celestial Tiger - 2024</span></div>
                         </div>
+                        <div class="image-item">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1777694921/copy_of_pumpkin_pie_s1hnqu_dca11f.png" loading="lazy" alt="Dan's Pumpkin Pie - 2024"/>
+                            <div class="overlay"><span>Dan's Pumpkin Pie - 2024</span></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1777695321/Bastion_kdualb.png" loading="lazy" alt="Bastion - 2026"/>
+                            <div class="overlay"><span>Bastion - 2026</span></div>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="title-line" id="paintings">
                     <h1>Acrylic and Watercolor</h1>
                 </div>
-                <div class="title-line" id="3dart">
+                <div class="image-gallery">
+                    <div class="column">
+                        <div class="image-item" id="">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1751489476/DSC05680-EDIT2_dq39w4.png" loading="lazy" alt="Larabee Tidepools, Acrylic on Canvas - 2025"/>
+                            <div class="overlay"><span>Larabee Tidepools, Acrylic on Canvas - 2025</span></div>
+                        </div>
+                        <div class="image-item" id="">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1751489447/DSC05676-EDIT2_mlu0ir.png" loading="lazy" alt="Skagit Grape Hyacinth, Acrylic on Canvas - 2025"/>
+                            <div class="overlay"><span>Skagit Grape Hyacinth, Acrylic on Canvas - 2025</span></div>
+                        </div>
+                        <div class="image-item" id="">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1749182601/SCAN0469_qveifq_z7gmfu.jpg" loading="lazy" alt="Athena, Watercolor - 2024"/>
+                            <div class="overlay"><span>Athena, Watercolor - 2024</span></div>
+                        </div>
+                        <div class="image-item" id="">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1777694262/frog1_ab21ez_45d105.png" loading="lazy" alt="Summer Rain, Happy Frog, Acrylic on Wood Round - 2025"/>
+                            <div class="overlay"><span>Summer Rain, Happy Frog, Acrylic on Wood Round - 2025</span></div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="image-item" id="">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1751489430/DSC05672-EDIT2_psjni9.png" loading="lazy" alt="Padden Forest Acrylic on Canvas- 2025"/>
+                            <div class="overlay"><span>Padden Forest Acrylic on Canvas - 2025</span></div>
+                        </div>
+                        <div class="image-item" id="">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1749182596/SCAN0467_uimfdf_d2eksi.jpg" loading="lazy" alt="Thriller, Watercolor - 2024"/>
+                            <div class="overlay"><span>Thriller, Watercolor - 2024</span></div>
+                        </div>
+                        <div class="image-item" id="">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1777694424/hummer1_rsziid.png" loading="lazy" alt="Spring Hummer, Acrylic on Wood Round - 2025"/>
+                            <div class="overlay"><span>Spring Hummer, Acrylic on Wood Round - 2025</span></div>
+                        </div>
+                        <div class="image-item" id="">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1777693481/hummer2_upwp34.png" loading="lazy" alt="Spring Hummer, Acrylic on Wood Round - 2025"/>
+                            <div class="overlay"><span>Spring Hummer, Acrylic on Wood Round - 2025</span></div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="image-item" id="">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1749182592/SCAN0468_wl20kg_gnjukl.jpg" loading="lazy" alt="Tucker, Watercolor - 2024"/>
+                            <div class="overlay"><span>Tucker, Watercolor - 2024</span></div>
+                        </div>
+                        <div class="image-item" id="">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1749182594/SCAN0466_puywvk_inbfgh.jpg" loading="lazy" alt="Zeus, Watercolor - 2024"/>
+                            <div class="overlay"><span>Zeus, Watercolor - 2024</span></div>
+                        </div>
+                        <div class="image-item" id="">
+                            <img src="https://res.cloudinary.com/drzpxjrab/image/upload/v1777693479/mouse2_h7rmz4.png" loading="lazy" alt="Cozy Mouse Cocoa, Acrylic on Wood Round - 2025"/>
+                            <div class="overlay"><span>Cozy Mouse Cocoa, Acrylic on Wood Round - 2025</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="title-line hide-xs hide-xl" id="3dart">
                     <h1>3d Works</h1>
                 </div>    
             </section>
@@ -142,7 +239,7 @@
         <footer>
             <div class="footer-grid">
                 <div>
-                    <p> Autumn Dirksen 2023</p>
+                    <p>Autumn Dirksen <span id="copyright-year"></span></p>
                 </div>
             </div>
         </footer>
